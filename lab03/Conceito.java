@@ -10,25 +10,18 @@ import java.util.Scanner;
 // D - 70 
 // E - 60
 
-public class Conceito {
+public class Conceito{
     public static void main(String[] args) {
     Scanner sc = new Scanner(System.in);
-    System.out.println("Informe um conceito: ");
-    double conceito = sc.nextDouble();
-    if (notas >= 90){
-        System.out.println("Conceito A");
-    } else if (conceito >= 80){
-        System.out.println("Conceito B");
-    } else if (conceito >= 70){
-        System.out.println("Conceito C"); 
-    } else if (conceito >= 60){
-        System.out.println("Conceito D");
-    } else if (conceito>= 50){
-        System.out.println("Conceito E");
-    } else if (conceito < 50){
-        System.out.println("Conceito F");
-    }
-
+    System.out.println("Digite um conceito: ");
+    var conceito = sc.next();
+    switch (conceito) {
+        case "A"  -> System.out.println("SUA NOTA É 100");
+        case "B" -> System.out.println("SUA NOTA 90");
+        case "C" -> System.out.println("SUA NOTA É 80");
+        case "D" -> System.out.println("SUA NOTA É 70");
+        case "E" -> System.out.println("SUA NOTA É 60");
 
     }
     }
+}
