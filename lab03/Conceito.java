@@ -23,5 +23,6 @@ public class Conceito{
         case "E" -> System.out.println("SUA NOTA É 60");
 
     }
+    sc.close();
     }
 }
